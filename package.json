@@ -1,0 +1,14 @@
+{
+  "name": "powderbluex",
+  "version": "0.1.0",
+  "private": true,
+  "packageManager": "pnpm@10.15.0",
+  "scripts": {
+    "dev": "pnpm --dir apps/web dev --port 8037",
+    "build": "pnpm --dir apps/web build",
+    "generate": "pnpm --dir apps/web generate",
+    "lint": "pnpm --dir apps/web lint",
+    "typecheck": "pnpm --dir apps/web typecheck",
+    "test": "pnpm --dir apps/web test"
+  }
+}

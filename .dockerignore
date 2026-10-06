@@ -1,0 +1,15 @@
+.git
+.github
+.nuxt
+.output
+node_modules
+**/node_modules
+coverage
+docs
+infra/k8s
+.env
+.env.*
+*.log
+*credential*
+*secret*
+*.pem

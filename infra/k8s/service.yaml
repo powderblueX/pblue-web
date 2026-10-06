@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: pblue-web
+  labels:
+    app.kubernetes.io/name: pblue-web
+    app.kubernetes.io/part-of: pblue-lab
+spec:
+  type: ClusterIP
+  selector:
+    app.kubernetes.io/name: pblue-web
+  ports:
+    - name: http
+      port: 80
+      targetPort: http
+      protocol: TCP
