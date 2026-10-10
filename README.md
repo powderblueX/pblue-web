@@ -79,6 +79,20 @@ pnpm generate
 
 Generated production files are written to `apps/web/.output/public`.
 
+## Publish to GitHub
+
+After editing the site, commit and push the `main` branch with:
+
+```bash
+./scripts/push-to-github.sh "Update website"
+```
+
+The script stages project changes, checks for staged environment and key files,
+lists the files for confirmation, commits when there are changes, then pushes to
+`origin/main`. The commit message is optional. Cloudflare Pages rebuilds the site
+after a successful push. Keep `apps/web/.env` local; set the map variables in
+Cloudflare Pages instead.
+
 ## Docker
 
 Build and run without relying on a host Node installation at runtime:
